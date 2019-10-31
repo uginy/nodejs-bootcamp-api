@@ -3,6 +3,8 @@
 Pretty convinient node.js (v10.15) api for regular CRUD apps.
 API Doc: https://documenter.getpostman.com/view/2427312/SW12ycWf
 
+API Url: https://api.lilmod.pro
+
 
 ## Full spec list:
 

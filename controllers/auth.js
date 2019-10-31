@@ -141,7 +141,6 @@ exports.forgotPassword = asyncHandler(async (req, res, next) => {
       subject: 'Password reset token',
       message
     });
-
     res.status(200).json({ success: true, data: 'Email sent' });
   } catch (err) {
     console.log(err);
@@ -152,11 +151,6 @@ exports.forgotPassword = asyncHandler(async (req, res, next) => {
 
     return next(new ErrorResponse('Email could not be sent', 500));
   }
-
-  res.status(200).json({
-    success: true,
-    data: user
-  });
 });
 
 // @desc      Reset password
